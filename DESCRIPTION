@@ -1,0 +1,10 @@
+Package: VpThemAll
+Title: Varpart Them All!
+Version: 0.0.0.9000
+Authors: Lucas Moitinho-Silva
+Description: This package has a series of assistant functions to wrap and perform variation partition with dbRDA method. In other words, this package aims to assist to test the effect of several variables in a multivariate set, having "partitioned out" the effect of other variables in consideration. It requires vegan v 2.4-5 and stringr.
+Depends: R (>= 3.4.3)
+License: BSD license
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.1.1.9000
