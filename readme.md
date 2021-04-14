@@ -7,7 +7,7 @@ This package has assistant functions to wrap and perform variation partition wit
 
 VpThemAll is a wrapper of vegan package functions. It's core is the varpart function of [vegan package](https://github.com/vegandevs/vegan). **All its routines, however, can be performed with vegan package functions.** The package was created to make coding easier and analysis reproducible, particularly when having many variables. It is used to calculate variation of a community explained by a given variable (e.g. environmental) having controlled by the effect of other variables in the test. ANOVA is used to test the significance of the variable to explain the community.
 
-Tested with vegan version 2.4-5. Some higher versions may produce NA instead of a valid adj.r.square. This should be fixed with later versions (for instance, vegan 2.5-7). See discussion on the subject on [vegan github page][https://github.com/vegandevs/vegan/issues/295].
+Tested with vegan version 2.4-5. Some higher versions may produce NA instead of a valid adj.r.square. This should be fixed with later versions (for instance, vegan 2.5-7). See discussion on the subject on [vegan github page](https://github.com/vegandevs/vegan/issues/295).
 
 ## Installation
 
