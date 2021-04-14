@@ -18,20 +18,13 @@ knit_print.data.frame <- lemon_print
 knitr::opts_chunk$set(
   echo=T,
   warning=FALSE,
-  message=FALSE)
+  message=FALSE,
+  include = TRUE,
+  tidy = FALSE,
+  dev=c("png",'pdf'),
+  dpi = 300)
 
 ```
-
-# Why and how?
-
-VpThemAll is a wrapper of vegan functions. The package should make your life easier, hopefully, when you want to calculate variation of a community explained by a given variable (e.g. environmental) having controlled by the effect of other variables in the test. ANOVA is used to test the significance of the variable to explain the community. It works pretty much as varpart, but offers a framework for testing more than 4 variables.
-
-Currently it works with version vegan 2.4-5. Some higher versions may produce NA instead of a valid adj.r.square. See current discussion on the subject on [vegan github page][https://github.com/vegandevs/vegan/issues/295]. 
-
-
-## Why not use varpart directly?
-
-You should use it if your case is not complicated or your formula has up to 4 variables. Varpart and VpThemAll will produce R-square and adjusted R-square which are calculated taken into account the variation explained by other variables in the formula. Varpart is limited to 4 variables. VpThemall is a framework to work with > 1 variables.
 
 # Import packages
 ```{r}
